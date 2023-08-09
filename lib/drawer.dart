@@ -14,12 +14,14 @@ class MainDrawer extends StatelessWidget {
             child: Text('Drawer Header'),
           ),
           ListTile(
+            leading: const Icon(Icons.home),
             title: const Text('Home'),
             onTap: () {
               context.go('/');
             },
           ),
           ListTile(
+            leading: const Icon(Icons.list),
             title: const Text('List'),
             onTap: () {
               context.go('/list');
