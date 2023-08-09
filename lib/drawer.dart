@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class MainDrawer extends StatelessWidget {
   const MainDrawer({super.key});
@@ -15,13 +16,13 @@ class MainDrawer extends StatelessWidget {
           ListTile(
             title: const Text('Home'),
             onTap: () {
-              Navigator.pop(context);
+              context.go('/');
             },
           ),
           ListTile(
-            title: const Text('Riverpod'),
+            title: const Text('List'),
             onTap: () {
-              Navigator.pop(context);
+              context.go('/list');
             },
           ),
         ],
