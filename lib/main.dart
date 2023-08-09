@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project/pages/font.dart';
 import 'package:flutter_project/pages/home.dart';
 import 'package:flutter_project/pages/list.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -26,6 +27,10 @@ class MyApp extends StatelessWidget {
         GoRoute(
           path: '/list',
           builder: (context, state) => const ListPage(),
+        ),
+        GoRoute(
+          path: '/font',
+          builder: (context, state) => const FontPage(),
         ),
       ],
     );

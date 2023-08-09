@@ -27,6 +27,13 @@ class MainDrawer extends StatelessWidget {
               context.go('/list');
             },
           ),
+          ListTile(
+            leading: const Icon(Icons.abc),
+            title: const Text('Font'),
+            onTap: () {
+              context.go('/font');
+            },
+          ),
         ],
       ),
     );
